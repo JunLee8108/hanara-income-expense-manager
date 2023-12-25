@@ -4,11 +4,23 @@ This application was created for the management of Hanara Sushi's expenses and i
 
 ## ⭐ Income Manager
 
-You can add, modify, and delete your income records and graph the data to manage your income more efficiently.
+### Card & Dashboard
+This is a section
 
-### `npm start`
+### Insert, Edit, and Delete Data
+This is a section
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Graph the Data
+This is a section
+
+### Income Report
+This is a section
+
+### Compare the total spending and total earnings for the current month
+This is a section
+
+### User-Friendly Interface
+This is a section
 
 
 ## ⭐ Expense Manager
