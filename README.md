@@ -2,7 +2,7 @@
 
 This application was created for the management of Hanara Sushi's expenses and income.
 
-## Income Manager
+## ⭐ Income Manager
 
 You can add, modify, and delete your income records and graph the data to manage your income more efficiently.
 
@@ -11,7 +11,7 @@ You can add, modify, and delete your income records and graph the data to manage
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 
-## Expense Manager
+## ⭐ Expense Manager
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
