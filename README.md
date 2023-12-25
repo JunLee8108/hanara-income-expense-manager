@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Hanara Income & Expense Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application was created for the management of Hanara Sushi's expenses and income.
 
 ## Available Scripts
 
