@@ -1,0 +1,97 @@
+.income-report-container {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 70px;
+  min-height: 500px;
+}
+
+.income-report-header,
+.income-report-subheader {
+  text-align: center;
+}
+
+.income-report-subheader {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.income-report-netTotal-container {
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
+  );
+
+  border-radius: 5px;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.income-report-netTotal-header,
+.income-report-netTotal {
+  color: white;
+}
+
+.income-report-netTotal-korean {
+  font-size: 1rem;
+}
+
+.income-report-netTotal {
+  font-size: 1.9rem;
+}
+
+.income-report-chart-container {
+  width: 70%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.income-report-info-container {
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  place-items: center;
+  grid-gap: 2rem 2rem;
+  margin-bottom: 50px;
+}
+
+.income-report-info-box {
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(70, 104, 215, 0.2);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 3px solid transparent;
+  transition: 0.3s all ease;
+}
+
+.income-report-info-box:hover {
+  border: 3px solid rgba(21, 69, 224, 0.2);
+}
+
+.income-report-info-box-header {
+  text-align: center;
+}
+
+.income-report-info-box-amount {
+  font-weight: normal;
+}
+
+.income-report-info-box-percentage {
+  text-align: center;
+  color: gray;
+}

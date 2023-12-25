@@ -1,0 +1,93 @@
+{
+  "name": "expense-manager",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "chart.js": "^4.4.0",
+    "electron-is-dev": "^2.0.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "tesseract.js": "^5.0.3",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "main": "electron-starter.js",
+  "scripts": {
+    "build": "react-scripts build",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win --x64",
+    "react-start": "react-scripts start",
+    "electron-start": "electron .",
+    "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && npm run electron-start\""
+  },
+  "build": {
+    "appId": "com.example.expensemanager",
+    "files": [
+      "electron-starter.js"
+    ],
+    "extraMetadata": {
+      "main": "electron-starter.js"
+    },
+    "mac": {
+      "category": "public.app-category.finance"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true,
+      "perMachine": true,
+      "language": 1042,
+      "shortcutName": "EM",
+      "artifactName": "EM-${version}.${ext}",
+      "uninstallDisplayName": "EM"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "icons"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^27.1.2",
+    "electron-builder": "^24.9.1",
+    "wait-on": "^7.2.0"
+  }
+}

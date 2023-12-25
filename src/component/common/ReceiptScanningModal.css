@@ -1,0 +1,116 @@
+.receipt-scanning-modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.receipt-scanning-modal-container {
+  background-color: white;
+  padding: 50px 50px;
+  padding-top: 30px;
+  z-index: 10;
+  border-radius: 5px;
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.receipt-scanning-modal-select,
+.receipt-scanning-modal-input {
+  padding: 13px 10px;
+}
+
+.receipt-scanning-modal-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.receipt-scanning-modal-form-header {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.receipt-scanning-modal-submit-btn {
+  padding: 15px 30px;
+  border: none;
+  background-color: #e1dfe9;
+  border-radius: 5px;
+  transition: 0.3s all ease;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.receipt-scanning-modal-submit-btn:hover {
+  background-color: #121212;
+  color: white;
+}
+
+.receipt-scanning-table-header {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.receipt-scanning-modal-container table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: auto;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px 6px 0 0;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.receipt-scanning-modal-container th,
+.receipt-scanning-modal-container td {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px dotted #444444;
+}
+
+.receipt-scanning-modal-container th {
+  background-color: #363636;
+  color: white;
+}
+
+.receipt-scanning-modal-container th:nth-child(1) {
+  border-radius: 5px 0 0 0;
+}
+
+.receipt-scanning-modal-container th:nth-last-child(1) {
+  border-radius: 0 5px 0 0;
+}
+
+.receipt-scanning-modal-container th:nth-child(1),
+.receipt-scanning-modal-container td:nth-child(1) {
+  border-left: none;
+}
+
+.receipt-scanning-modal-container th:nth-child(1),
+.receipt-scanning-modal-container th:nth-child(2),
+.receipt-scanning-modal-container th:nth-child(3),
+.receipt-scanning-modal-container th:nth-child(4),
+.receipt-scanning-modal-container th:nth-child(5),
+.receipt-scanning-modal-container th:nth-child(6) {
+  border-top: 1px transparent solid;
+}
+
+.receipt-scanning-modal-container td:nth-last-child(1),
+.receipt-scanning-modal-container td:nth-last-child(2) {
+  width: 5px;
+}

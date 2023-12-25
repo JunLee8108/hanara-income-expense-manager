@@ -1,0 +1,279 @@
+.income-dashboard-container {
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.income-dashboard-header,
+.income-dashboard-date {
+  color: #34495e; /* Dark color for contrast */
+  font-size: 1.7em; /* Larger font size */
+  margin-bottom: 30px; /* Spacing after the header */
+  text-align: center;
+}
+
+.income-dashboard-date {
+  font-size: 1.3em;
+  color: #444444;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.income-dashboard-total-expense,
+.income-dashboard-total-expense-month {
+  width: 97%;
+  box-sizing: border-box;
+  color: white; /* White text for contrast */
+  padding: 15px; /* Spacing inside the card */
+  padding-top: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  text-align: center; /* Center the text */
+  font-size: 1.2em; /* Slightly larger font */
+  margin: 20px auto; /* Centering and spacing outside the card */
+  display: block;
+}
+
+.income-dashboard-total-expense {
+  background: linear-gradient(
+    110.6deg,
+    rgb(184, 142, 252) 2.2%,
+    rgb(104, 119, 244) 100.2%
+  );
+}
+
+.income-dashboard-total-expense-korean {
+  font-size: 14px;
+}
+
+.income-dashboard-expense-total {
+  display: block;
+}
+
+.income-dashboard-total,
+.income-dashoboard-total-month {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.income-dashoboard-total-month {
+  margin-bottom: 20px;
+}
+
+.income-dashboard-month-items {
+  font-size: 1.1rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: block;
+  color: #f5f5f5;
+}
+
+.income-dashboard-info-container {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  place-items: center;
+  grid-gap: 2rem 2rem;
+}
+
+.income-dashboard-info-box {
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(70, 104, 215, 0.2);
+  padding: 15px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  transition: 0.3s all ease;
+}
+
+.income-dashboard-info-box:hover {
+  border: 3px solid rgba(21, 69, 224, 0.2);
+}
+
+.income-dashboard-info-box-header {
+  text-align: center;
+}
+
+.income-dashboard-info-box-amount {
+  font-weight: normal;
+}
+
+.income-dashboard-info-box-percentage {
+  text-align: center;
+  color: gray;
+}
+
+.income-dashboard-chart-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  place-items: center;
+  grid-gap: 2rem 0;
+  /* justify-content: center;
+      align-items: center; */
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.income-dashboard-bar-container,
+.income-dashboard-doughnut-container {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  box-sizing: border-box;
+
+  border-radius: 10px;
+  width: 95%;
+  transition: 0.3s transform ease;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(70, 104, 215, 0.2);
+}
+
+.income-dashboard-bar-container {
+  height: 100%;
+}
+
+.income-dashboard-bar-container:hover,
+.income-dashboard-doughnut-container:hover {
+  transform: scale(1.05);
+}
+
+.income-dashboard-chart-header,
+.income-dashboard-chart-subheader,
+.income-dashboard-chart-subheader-korean {
+  text-align: center;
+  margin-top: 0;
+}
+
+.income-dashboard-chart-header {
+  margin-bottom: 10px;
+}
+
+.income-dashboard-chart-subheader-korean {
+  margin-bottom: 30px;
+}
+
+.income-dashboard-chart-no-data-header {
+  text-align: center;
+}
+
+.doughunt-chart-container {
+  width: 50%;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doughunt-chart-container-modal {
+  width: 50%;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chart-modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.chart-modal-container {
+  background-color: white;
+  /* padding: 50px; */
+  width: 80%;
+  border-radius: 5px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.chart-modal-graph-container {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%;
+}
+
+.chart-modal-btn-container {
+  width: 99%;
+  box-sizing: border-box;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.chart-modal-close-btn {
+  padding: 10px 13px;
+  border: none;
+  border-radius: 50%;
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.chart-modal-close-btn:hover {
+  background-color: red;
+}
+
+.dashboard-expensive-table {
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+}
+
+.dashboard-expensive-table th,
+.dashboard-expensive-table td {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px dotted #444444;
+}
+
+.dashboard-expensive-table th {
+  background-color: #363636;
+  color: white;
+}
+
+.dashboard-expensive-table th:nth-child(1) {
+  border-radius: 5px 0 0 0;
+}
+
+.dashboard-expensive-table th:nth-last-child(1) {
+  border-radius: 0 5px 0 0;
+}
+
+.dashboard-expensive-table th:nth-child(1),
+.dashboard-expensive-table td:nth-child(1) {
+  border-left: none;
+}
+
+.dashboard-expensive-table th:nth-child(1),
+.dashboard-expensive-table th:nth-child(2),
+.dashboard-expensive-table th:nth-child(3),
+.dashboard-expensive-table th:nth-child(4),
+.dashboard-expensive-table th:nth-child(5),
+.dashboard-expensive-table th:nth-child(6) {
+  border-top: 1px transparent solid;
+}

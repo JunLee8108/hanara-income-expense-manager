@@ -1,0 +1,34 @@
+.item-input-center-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.item-input-right,
+.item-input-left {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.item-input-required {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.input-textarea {
+  margin-top: 0px;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item-input-textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  white-space: pre-wrap;
+  line-height: 20px;
+  padding: 10px;
+}
